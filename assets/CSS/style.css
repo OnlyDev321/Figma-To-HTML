@@ -435,8 +435,18 @@ a {
   background: #2e2100;
 }
 
-.feedback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  /* 2 thuoc tinh nay la dung de chuyen trang */
+  transform: translateX(-100%);
+  transition: all ease 0.5s;
 }
 
 .feedback-item .avatar {
